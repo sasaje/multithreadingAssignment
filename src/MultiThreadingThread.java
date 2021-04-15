@@ -1,5 +1,7 @@
 //1000 sømil = 1852km
 
+// Assignment 1 with Thread
+
 public class MultiThreadingThread extends Thread{
 
     public static void main(String[] args) throws InterruptedException {
