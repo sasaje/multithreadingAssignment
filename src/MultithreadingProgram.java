@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class MultithreadingProgram extends Thread {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         int n = 0;
 
         while (n <= 0){
@@ -26,6 +26,7 @@ public class MultithreadingProgram extends Thread {
             MultithreadingProgram obj = new MultithreadingProgram();
             String name = String.valueOf(i);
             obj.setName(name);
+            MultithreadingProgram.sleep(1000);
             obj.start();
         }
     }
